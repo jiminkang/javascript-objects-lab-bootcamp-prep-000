@@ -1,4 +1,4 @@
-var recipes = {eggs:3};
+var recipes = {'eggs':3};
 
 function updateObjectWithKeyAndValue(obj,key,value){
   var newObj=Object.assign(obj, {[key]: value});
@@ -19,6 +19,6 @@ function deleteFromObjectByKey(obj,key){
 }
 
 function destructivelyDeleteFromObjectByKey(obj,key){
-  delete obj.key;
+  delete obj[key];
   return obj;
 }
